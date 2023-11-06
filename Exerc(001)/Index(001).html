@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
+        @media(max-width: 1250px) {
+            #muie {
+                position: absolute;
+                bottom: 0px;
+                left: 25%;
+                height: 540px;
+            }
+            #container {
+                width: 100%;
+                position: absolute;
+                bottom: 290px;
+            }
+        }
+        @media(max-width: 900px) {
+            #muie {
+                left: 50%;
+                transform: translateX(-50%);
+                height: 340px;
+                position: absolute;z
+                bottom: 0px;
+            }
+            #container {
+                width: 100%;
+                position: absolute;
+                bottom: 290px;
+            }
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        #fundo {
+            z-index: -1;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+        #text {
+            position: absolute;
+            bottom: 150px;
+            margin: 10px 30px;
+        }
+        #container {
+            text-shadow: 1px 1px 2px black;
+        }            
+        #sombra {
+            color: white;
+            position: fixed;
+            bottom: 0px;
+            height: 80%;
+            width: 100%;
+            background: linear-gradient(0deg, black, rgba(136, 136, 136, 0));
+        }
+        h1, p, h2 {
+            font-family: 'Geologica';
+        }
+        main {
+            font-size: 1.1em;
+            position: relative;
+        }
+        #muie {
+            position: fixed;
+            right: -50px;
+        }
+        article {
+            color: white;
+            text-align: center;
+            position: absolute;
+            bottom: 50px;
+            margin: 10px 30px;
+            border-radius: 10px;
+            width: 250px;
+            padding: 20px;
+            background: linear-gradient(0deg, rgb(51, 130, 233), rgb(85, 193, 255));
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="sombra">
+            <div id="container">
+                <div id="text">
+                    <h1>O SEU ELETRECISTA EM SALVADOR!</h1>
+                    <p>Serviço de Eletricista <strong style="color: yellow;">Residencial</strong>, <strong style="color: yellow;">Predial</strong> e <strong style="color: yellow;">Comercial</strong>.</p>
+                    <p>Com excelência, preço acessível e proficionalismo em Salvador e Região.</p>
+                </div>
+                <a href="https://servicos.neoenergiacoelba.com.br/Pages/index.aspx">
+                    <article>
+                        <p>FAZER ORÇAMENTO AGORA!</p>
+                    </article>
+                </a>
+            </div>
+        </div>
+    </main>
+    <img id="muie" src="Imagens/pngtree-beaming-construction-worker-cheerful-portrait-company-photo-png-image_13281948.png" alt="sla2">
+    <img id="fundo" src="Imagens/construcao-civil.webp" alt="sla1">
+</body>
+</html>
