@@ -7,7 +7,8 @@
     <style>
         body {
             height: 98vh;
-            background: url('imagens/wallpaper002\ \(1\).jpg') center center;
+            background: black url('imagens/wallpaper002\ \(1\).jpg') no-repeat center center fixed;
+            background-size: cover;
         }
         .quadrado {
             display: inline-block;
@@ -32,6 +33,24 @@
         #q5 {
             background: url('imagens/pattern004\ \(1\).png') no-repeat bottom right;
         }
+        #q6 {
+            background: url('imagens/pattern001\ \(1\).png') no-repeat;
+            background-size: cover;
+        }
+        #q7 {
+            background: url('imagens/pattern002\ \(1\).png') center no-repeat;
+            background-size: 75%;
+            position: relative;
+        }
+        #q8 {
+            height: 100px;
+            width: 100px;
+            background: url('imagens/pattern003\ \(1\).png') no-repeat;
+            position: absolute;
+            top: 20%;
+            right: 20%;
+            transform: translateX(-5%);
+        }
     </style>
 </head>
 <body>
@@ -50,5 +69,14 @@
     <div class="quadrado" id="q5">
         
     </div>
+    <div class="quadrado" id="q6">
+        
+    </div>
+    <div class="quadrado" id="q7">
+        <div class="quadrado" id="q8">
+        
+        </div>
+    </div>
+    
 </body>
 </html>
