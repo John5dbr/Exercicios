@@ -4,6 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela-3</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 650px;
+            border-collapse: collapse;
+        }
+        .estado {
+            text-align: left;
+        }
+        tbody td:hover {
+            background-color: rgb(173, 173, 173);
+        }
+        tbody td:active {
+            border: 2px solid black;
+        }
+        td {
+            text-align: center;
+            vertical-align: middle;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        thead, tfoot {
+            color: white;
+            background-color: rgb(88, 88, 88);
+        }
+        .num {
+            text-align: right;
+        }
+        #result {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <!--
@@ -18,7 +52,96 @@
     -->
     <h1>Tabelas grandes</h1>
     <table>
-        
+        <thead>
+            <tr>
+                <td>Posição</td>
+                <td>Estado</td>
+                <td>População (Censo de 2022)</td>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>
+                <td>1°</td>
+                <td class="estado">São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>2°</td>
+                <td class="estado">Minas Gerais</td>
+                <td class="num">20 538 718	</td>
+            </tr>
+            <tr>
+                <td>3°</td>
+                <td class="estado">Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>4°</td>
+                <td class="estado">Bahia</td>
+                <td class="num">14 016 906</td>
+            </tr>
+            <tr>
+                <td>5°</td>
+                <td class="estado">Paraná</td>
+                <td class="num">10 444 526</td>
+            </tr>
+            <tr>
+                <td>6°</td>
+                <td class="estado">Rio Grande do Sul</td>
+                <td class="num">10 693 929</td>
+            </tr>
+            <tr>
+                <td>7°</td>
+                <td class="estado">Pernanbuco</td>
+                <td class="num">8 796 448</td>
+            </tr>
+            <tr>
+                <td>8°</td>
+                <td class="estado">Ceará</td>
+                <td class="num">8 452 381</td>
+            </tr>
+            <tr>
+                <td>9°</td>
+                <td class="estado">Pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+            <tr>
+                <td>10°</td>
+                <td class="estado">Santa Catarina</td>
+                <td class="num">7 610 361</td>
+            </tr>
+            <tr>
+                <td>11°</td>
+                <td class="estado">Goiás</td>
+                <td class="num">7 056 495</td>
+            </tr>
+            <tr>
+                <td>12°</td>
+                <td class="estado">Maranhão</td>
+                <td class="num">6 775 805</td>
+            </tr>
+            <tr>
+                <td>13°</td>
+                <td class="estado">Paraíba</td>
+                <td class="num">3 974 687</td>
+            </tr>
+            <tr>
+                <td>14°</td>
+                <td class="estado">Amazonas</td>
+                <td class="num">3 941 613</td>
+            </tr>
+            <tr>
+                <td>15°</td>
+                <td class="estado">Espírito Santo</td>
+                <td class="num">3 833 712</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total de habitantes</td>
+                <td id="result">00000000000</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
