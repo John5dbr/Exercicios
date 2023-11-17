@@ -9,7 +9,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
-            width: 650px;
+            width: 550px;
             border-collapse: collapse;
         }
         .estado {
@@ -21,13 +21,20 @@
         tbody td:active {
             border: 2px solid black;
         }
-        td {
+        td, th {
             text-align: center;
             vertical-align: middle;
             padding: 5px;
             border: 1px solid black;
         }
-        thead, tfoot {
+        caption {
+            text-transform: uppercase;
+            padding: 10px;
+            border: 1px solid black;
+            border-bottom: none;
+        }
+        thead, tfoot, caption {
+            font-weight: bold;
             color: white;
             background-color: rgb(88, 88, 88);
         }
@@ -43,6 +50,7 @@
     <!--
         Anatomia para tabelas grandes
         Table
+            Caption
             Thead
                 tr, td, th
             Tbody
@@ -52,11 +60,14 @@
     -->
     <h1>Tabelas grandes</h1>
     <table>
+        <caption>
+            Estados e suas populações
+        </caption>
         <thead>
             <tr>
-                <td>Posição</td>
-                <td>Estado</td>
-                <td>População (Censo de 2022)</td>
+                <th style="width: 120px;" scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th style="width: 120px;" scope="col">População (Censo de 2022)</th>
             </tr>
         </thead>
         <tbody> 
@@ -138,7 +149,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total de habitantes</td>
+                <th scope="row">Total de habitantes</th>
                 <td id="result">00000000000</td>
             </tr>
         </tfoot>
