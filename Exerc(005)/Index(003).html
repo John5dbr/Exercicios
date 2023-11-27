@@ -16,10 +16,7 @@
             text-align: left;
         }
         tbody td:hover {
-            background-color: rgb(173, 173, 173);
-        }
-        tbody td:active {
-            border: 2px solid black;
+            background-color: rgb(168, 168, 168);
         }
         td, th {
             text-align: center;
@@ -38,6 +35,9 @@
             color: white;
             background-color: rgb(88, 88, 88);
         }
+        tbody > tr:nth-child(even) {
+            background: rgb(206, 205, 205);
+        }
         .num {
             text-align: right;
         }
@@ -47,6 +47,25 @@
     </style>
 </head>
 <body>
+    <!--
+        
+@tiago.sampa_
+há 9 meses
+    📝 LEMBRE-SE:
+
+    Usar a pseudo-classe	:nth-child( )
+
+    - Para linhas pares usar (even) ou (2n);
+    - Para linhas ímpares usar (odd) ou (2n-1).
+
+    Ex:	tbody > tr:nth-child(odd) {
+                background-color: white;	(opcional quando o fundo já for branco)
+                }
+
+    tbody > tr:nth-child(even) {
+                background-color: lightgray;
+                }
+    -->
     <!--
         Anatomia para tabelas grandes
         Table
