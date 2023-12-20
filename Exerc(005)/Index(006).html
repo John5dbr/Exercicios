@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial Narrow', Arial, sans-serif;
+        }
+        caption {
+            padding: 7px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 1px solid black;
+            background: rgb(137, 175, 245);
+        }
+        table {
+            background: cornflowerblue;
+            border: 1px solid black;
+            width: 400px;
+        }
+        td.sex {
+            background: rgb(255, 193, 204);
+        }
+        td.sexo {
+            background: rgb(105, 187, 255);
+        }
+        th {
+            padding: 5px;
+            background: white;
+        }
+        td, th {
+            padding: 5px;
+            border: 1px solid black;
+        }
+        col.s {
+            background: rgb(138, 137, 137);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="p" span="">
+            <col class="s" span="odd">
+            <col class="t">
+            <col class="q" span="">
+        </colgroup>
+        <caption>
+            Cadastro
+        </caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr >
+                <td class="sex">Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td class="sexo">Claudio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td class="sexo">Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td class="sexo">Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Vendedor</td>
+            </tr>
+            <tr >
+                <td class="sex">Maria</td>
+                <td>F</td>
+                <td>39</td>
+                <td>Médica</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
